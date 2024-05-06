@@ -1,0 +1,6 @@
+fastapi
+sqlalchemy
+uvicorn
+alembic
+redis
+pytest

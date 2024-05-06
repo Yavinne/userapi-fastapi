@@ -1,0 +1,31 @@
+version: '3'
+networks:
+  network_1:
+    ipam:
+      config:
+        - subnet: 10.0.0.0/24 
+services:
+  userapi:
+    build: .
+    expose:
+      - 8000
+    ports:
+      - 8000:8000
+    environment:
+      - SERVICE_NAME=userapi
+    networks:
+      network_1:
+        aliases: 
+          - userapi:10.0.0.1
+  redis:
+    image: redis
+    expose:
+      - 6379
+    ports:
+      - 6379:6379
+    environment:
+      - SERVICE_NAME=redis
+    networks:
+      network_1:
+        aliases: 
+          - redis:10.0.0.2
