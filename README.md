@@ -111,7 +111,7 @@ N'oubliez pas de donner une étoile au projet ! Merci encore !
 <!-- LICENSE -->
 ## Licence
 
-Distribué sous licence MIT. Voir `license.txt` pour plus d'informations.
+Distribué sous licence MIT. Voir `LICENSE` pour plus d'informations.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
